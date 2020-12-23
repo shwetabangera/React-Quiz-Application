@@ -1,15 +1,16 @@
 import { Component } from "react";
-import Instruction from "./Instruction";
 import questions from "../data/questions.js";
 import Question from "./Question";
-//import UserInput from "./UserInput";
-class QuizApplication extends Component {
+import Instruction from "./Instruction";
+export class QuizApplication extends Component {
 	state = {
 		isQuizStarted: false,
-		questions: "",
+		questions: [],
 	};
 	startQuiz = (event) => {
-		this.setState({ isQuizStarted: false });
+		this.setState({
+			isQuizStarted: true,
+		});
 	};
 	componentDidMount() {
 		let quizQuestions = questions.map((question) => {
@@ -19,25 +20,22 @@ class QuizApplication extends Component {
 				timeTaken: 0,
 				isAttempted: false,
 				isSubmitted: false,
-				selectedAnswer: "",
+				selectedAnswer: false,
 			};
 		});
 		this.setState({ questions: [...quizQuestions] });
 	}
-
 	render() {
 		return (
 			<div>
-				<h1>Quiz Application{this.state.userName}</h1>
+				<h1>Quiz Application</h1>
 				{this.state.isQuizStarted ? (
-					<div>
-						<Question question={this.state.questions[0]} />
-					</div>
+					<Question questions={this.state.questions[0]} />
 				) : (
 					<div>
 						{" "}
 						<Instruction />
-						<button onClick={this.startQuiz}>Start Quiz</button>{" "}
+						<button onClick={this.startQuiz}>Start Quiz</button>
 					</div>
 				)}
 			</div>
