@@ -48,5 +48,78 @@ const question = [
 
 		hasMultipleCorrectAnswers: false,
 	},
+	{
+		questionId: uniqid(),
+		question: "Which of the following is an interface?",
+		options: [
+			{
+				value: "Thread",
+				isCorrect: true,
+			},
+			{
+				value: "Runnable",
+				isCorrect: false,
+			},
+			{
+				value: "Date",
+				isCorrect: false,
+			},
+			{
+				value: "Calendar",
+				isCorrect: false,
+			},
+		],
+
+		hasMultipleCorrectAnswers: false,
+	},
+	{
+		questionId: uniqid(),
+		question:
+			"Which of following element is responsible for making text italic in HTML?",
+		options: [
+			{
+				value: "<pre>",
+				isCorrect: false,
+			},
+			{
+				value: "<a>",
+				isCorrect: false,
+			},
+			{
+				value: "<b>",
+				isCorrect: false,
+			},
+			{
+				value: "<i>",
+				isCorrect: true,
+			},
+		],
+
+		hasMultipleCorrectAnswers: false,
+	},
+	{
+		questionId: uniqid(),
+		question: "<hr>tag in html is used for?",
+		options: [
+			{
+				value: "horizontal ruler",
+				isCorrect: true,
+			},
+			{
+				value: "vertical ruler",
+				isCorrect: false,
+			},
+			{
+				value: "new paragraph",
+				isCorrect: false,
+			},
+			{
+				value: "new line",
+				isCorrect: false,
+			},
+		],
+
+		hasMultipleCorrectAnswers: false,
+	},
 ];
 export default question;

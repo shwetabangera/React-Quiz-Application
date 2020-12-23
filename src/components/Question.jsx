@@ -20,6 +20,7 @@ export class Question extends Component {
 					})}
 					<input type="reset" value="Reset"></input>
 					<button>Next</button>
+					<button>Submit</button>
 				</div>
 			</form>
 		);

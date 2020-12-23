@@ -4,7 +4,7 @@ function Instruction() {
 			<p>Time limit is: 5 Minutes</p>
 			<p>No Negative Marking</p>
 			<p>All Questions are compulsory</p>
-			<p>Submit Questions</p>
+			<p>Answer is submitted automatically upon completing 5 minutes. </p>
 		</div>
 	);
 }

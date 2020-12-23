@@ -1,4 +1,5 @@
 //import Counter from "./components/Counter";
+
 import QuizApplication from "./components/QuizApplication";
 function App() {
 	return (
