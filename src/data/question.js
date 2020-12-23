@@ -1,23 +1,23 @@
 import uniqid from "uniqid";
-const questions = [
+const question = [
 	{
 		questionId: uniqid(),
-		question: "What is 1+1?",
+		question: "What is full form of CPU?",
 		options: [
 			{
-				value: "1",
+				value: "Control Processor Unit",
 				isCorrect: false,
 			},
 			{
-				value: "2",
+				value: "Central Processing Unit",
 				isCorrect: true,
 			},
 			{
-				value: "3",
+				value: "Computer Program Unit",
 				isCorrect: false,
 			},
 			{
-				value: "4",
+				value: "Central Processor Unit",
 				isCorrect: false,
 			},
 		],
@@ -26,22 +26,22 @@ const questions = [
 	},
 	{
 		questionId: uniqid(),
-		question: "What is 2+3?",
+		question: "What is full form of css?",
 		options: [
 			{
-				value: "4",
+				value: "Cascading stylesheet",
 				isCorrect: false,
 			},
 			{
-				value: "5",
+				value: "Creative Stylesheet",
 				isCorrect: true,
 			},
 			{
-				value: "6",
+				value: "Colorful Style sheets",
 				isCorrect: false,
 			},
 			{
-				value: "7",
+				value: "Computer Style Sheets",
 				isCorrect: false,
 			},
 		],
@@ -49,4 +49,4 @@ const questions = [
 		hasMultipleCorrectAnswers: false,
 	},
 ];
-export default questions;
+export default question;

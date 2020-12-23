@@ -2,9 +2,9 @@ function Instruction() {
 	return (
 		<div>
 			<p>Time limit is: 5 Minutes</p>
-			<p>Instruction 2</p>
-			<p>Instruction 3</p>
-			<p>Instruction 4</p>
+			<p>No Negative Marking</p>
+			<p>All Questions are compulsory</p>
+			<p>submit Questions</p>
 		</div>
 	);
 }

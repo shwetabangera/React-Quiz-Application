@@ -6,7 +6,7 @@ class UserInput extends Component {
 				<label></label>
 
                 <input type="text" name="userName"/>
-                <button onClick={this.props.addUserName{}}
+                <button onClick={this.props.addUserName{s}}
 			</div>
 		);
 	}

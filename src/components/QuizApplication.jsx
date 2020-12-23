@@ -1,11 +1,11 @@
 import { Component } from "react";
-import questions from "../data/questions.js";
+import question from "../data/question.js";
 import Question from "./Question";
 import Instruction from "./Instruction";
 export class QuizApplication extends Component {
 	state = {
 		isQuizStarted: false,
-		questions: [],
+		question: [],
 	};
 	startQuiz = (event) => {
 		this.setState({
@@ -13,7 +13,7 @@ export class QuizApplication extends Component {
 		});
 	};
 	componentDidMount() {
-		let quizQuestions = questions.map((question) => {
+		let quizQuestions = question.map((question) => {
 			return {
 				...question,
 				isCorrectlyAnswered: false,
@@ -30,7 +30,7 @@ export class QuizApplication extends Component {
 			<div>
 				<h1>Quiz Application</h1>
 				{this.state.isQuizStarted ? (
-					<Question questions={this.state.questions[0]} />
+					<Question question={this.state.question[0]} />
 				) : (
 					<div>
 						{" "}
