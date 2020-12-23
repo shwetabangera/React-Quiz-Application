@@ -23,7 +23,7 @@ export class QuizApplication extends Component {
 				selectedAnswer: false,
 			};
 		});
-		this.setState({ questions: [...quizQuestions] });
+		this.setState({ question: [...quizQuestions] });
 	}
 	render() {
 		return (
